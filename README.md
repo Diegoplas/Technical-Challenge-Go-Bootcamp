@@ -19,14 +19,7 @@ As this project utilizes go modules, the dependencies can be easily downloaded e
 go mod download
 ```
 
-### 2. Run Tests
-
-To run unit tests execute:
-```
-go test ./...
-```
-
-### 3. Environment variable
+### 2. Environment variable
 
 The environment variable OWM_API_KEY must be aded for being able to use openweathermap api. 
 To add it simply execute the next line:
@@ -34,7 +27,7 @@ To add it simply execute the next line:
 export OWM_API_KEY=0809093061a9fa551dd6e36ab91a180c
 ```
 
-### 4. Usage
+### 3. Usage
 
 1. Enter the app folder
    ```
@@ -63,4 +56,9 @@ export OWM_API_KEY=0809093061a9fa551dd6e36ab91a180c
    Also you can add a comma and the country abbreviation after the city, this to make sure you are looking for the desired place.
    ```
    Eg. http://localhost:8000/get-weather?city=Guadalajara,mx
+   ```
+
+5. To run unit tests execute:
+   ```
+   go test ./...
    ```
